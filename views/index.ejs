@@ -1,19 +1,25 @@
+<!-- CSS Stylesheets invoke section -->
 <link href="/stylesheets/projectStyles.css" rel="stylesheet" type="text/css">
 <link href="/stylesheets/side_bar.css" rel="stylesheet" type="text/css">
 
+<!-- Home/Index  Page Design section-->
 <body>
+   <!-- Invoking/calling Common Header/navigation bar from Partials -->
     <% include partials/header.ejs %>
+  
+    <!-- Home Page  -->
+
     <div id="allPage"> 
-        
     <div id="wrapper">
         
 
         <main>
+          <!-- Mission Statement -->
             <h2 class="auto-style2">Mission Statement</h2>
            <p>As part of my process, I rely on a unique approach that matches your needs with my services. From there, we’ll work to strategically tackle, advise, and reach your goals. Learn more about me, my services, and if it’s a good fit for you.</p>
            <p>&nbsp;</p>               
           
-           
+           <!-- Page body with some image and design  -->
          </table>
            <h2 class="auto-style2"></h2>
             <table id="customers">
@@ -26,14 +32,16 @@
        
          </main>
 
-                    
+           <!-- Side Banner Bar to include pic,contact and social media links  -->
                <aside>
                 <figure>
+                  <!-- Image -->
                 <img src="/images/chitra_pic.jpg" width="300" height="400" alt="real image">
+                <!-- Contact and Email -->
                 <br><i class="fas fa-phone-volume"></i> (416) 558-9479    
                 <br><i class="fas fa-paper-plane"></i> <a href="mailto:Cr_Creations@gmail.com"> Cr_Creations@gmail.com </a>
                 </figure>
-                
+                <!-- Social Media Information link -->
                 <br> Social</br>
                 <table id="customers" style="background-color: powderblue;">
                     <tr>
@@ -42,19 +50,12 @@
                       </th>
                       <th style="background-color: powderblue;"><a href = "https://www.linkedin.com/in/chitra-roy-93290a193">
                         <img src="/images/lk-logo.png" alt=""  height=100 width=110></img>
-                      </a></th>
-
-                      <!-- Add font awesome icons -->
-
-                      
+                      </a></th>                      
                     </tr></table>
-
                 <br>
                 <br>
-                <!-- <div class="container">
-              
-                </div>	 -->
               </aside>
+              <!-- Invoking/calling Commonfooter bar from Partials -->
               <% include partials/footer.ejs %> 
              </div>
              </div>

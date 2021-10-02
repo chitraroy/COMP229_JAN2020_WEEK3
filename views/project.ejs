@@ -1,16 +1,23 @@
+<!-- CSS Stylesheets invoke section -->
 <link href="/stylesheets/projectStyles.css" rel="stylesheet" type="text/css">
 <link href="/stylesheets/side_bar.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-<body>
-    <% include partials/header.ejs %>
-    <div id="allPage"> 
-        
-    <div id="wrapper">
-        
 
+<!--  Detailed Project  Page Design section-->
+<body>
+   <!-- Invoking/calling Common Header/navigation bar from Partials -->
+    <% include partials/header.ejs %>
+
+    <!-- Project Page  -->
+
+    <div id="allPage">  
+    <div id="wrapper">
         <main>
+          <!-- Information About Recent Projects -->
             <h2 class="auto-style2">Recent Projects</h2>
+
+            <!-- Project #1 Title -->
             <table id="listing" style="width: 500px">
               <tr>
                 <td style="height: 25px; " class="auto-style2" colspan="2">
@@ -18,15 +25,18 @@
                 </td>
               </tr>
             </table>
+            <!-- Project #1 Details -->
               <p>The Online Clothing Store software (OCSS) web and mobile application will 
                 enable users to shop their desirable cloths. Our app is to provide users a 
                 state of the art online shopping experience and upholds the company’s goodwill 
                 in our online presence and channels.</p>
+            <!-- Project #1 Sample Image -->
             <table id="listing" style="width: 700px" >
               <tr>
                 <td>
                 <img alt="" height="380" src="/images/online_clothing.jpg" width="380" class="auto-style1"></a>
-                </td>  
+                </td> 
+            <!-- Project #1 Tech Stack List --> 
                     <td>
                       <ul>
                         <li>MS Word</li>
@@ -36,7 +46,8 @@
                       </ul>
                     </td></tr>
                 </table>
-              <!-- 2nd proj -->
+
+              <!-- Project #2 Title -->
               <table id="listing" style="width: 500px">
                 <tr>
                   <td style="height: 25px; " class="auto-style2" colspan="2">
@@ -44,14 +55,17 @@
                   </td>
                 </tr>
               </table>
+              <!-- Project #2 Details -->
                 <p>Dynamic Slide Show creation which will be acting based on user response
                    and dynamiccaly allocate chosen image to saved galary.When you reach the image storing capacity
                   limit the code will automaticaaly overwrite in FIFO algorithm.</p>
+              <!-- Project #2 Sample Image -->
               <table id="listing" style="width: 700px" >
                 <tr>
                   <td>
                   <img alt="" height="300" src="/images/slide_show.JPG" width="380" class="auto-style1"></a>
                   </td>  
+                <!-- Project #2 Tech Stack List --> 
                       <td>
                         <ul>
                           <li>HTML</li>
@@ -61,7 +75,7 @@
                       </td></tr>
                   </table>
 
-                  <!-- 3rd proj -->
+               <!-- Project #3 Title -->
               <table id="listing" style="width: 500px">
                 <tr>
                   <td style="height: 25px; " class="auto-style2" colspan="2">
@@ -69,15 +83,18 @@
                   </td>
                 </tr>
               </table>
+             <!-- Project #3 Details -->
                 <p>This is a standalone Bug Catcher Game, Developed on HTML 5 and CSS platform.
                   It is a game with cool features,where user can reset the bug movement speed.
                   It keep tracks of the point scored by the user untill the game is stopped by the user.
                 </p>
+              <!-- Project #3 Sample Image -->
               <table id="listing" style="width: 700px" >
                 <tr>
                   <td>
                   <img alt="" height="300" src="/images/bug_game.JPG" width="380" class="auto-style1"></a>
                   </td>  
+              <!-- Project #3 Tech Stack List --> 
                       <td>
                         <ul>
                           <li>HTML</li>
@@ -90,14 +107,16 @@
                        
          </main>
 
-                    
+              <!-- Side Banner Bar to include pic,contact and social media links  -->      
                <aside>
                 <figure>
+                  <!-- Image -->
                 <img src="/images/chitra_pic.jpg" width="300" height="400" alt="real image">
+                <!-- Contact and Email -->
                 <br><i class="fas fa-phone-volume"></i> (416) 558-9479    
                 <br><i class="fas fa-paper-plane"></i> <a href="mailto:Cr_Creations@gmail.com"> Cr_Creations@gmail.com </a>
                 </figure>
-                
+                 <!-- Social Media Information link -->
                 <br> Social</br>
                 <table id="customers" style="background-color: powderblue;">
                     <tr>
@@ -108,12 +127,14 @@
                         <img src="/images/lk-logo.png" alt=""  height=100 width=110></img>
                       </a></th>
 
-                    </tr></table>
+                    </tr>
+                 </table>
 
                 <br>
                 <br>
             
               </aside>
+              <!-- Invoking/calling Commonfooter bar from Partials -->
               <% include partials/footer.ejs %> 
              </div>
              </div>
