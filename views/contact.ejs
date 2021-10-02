@@ -1,0 +1,70 @@
+<link href="/stylesheets/projectStyles.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/side_bar.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+<body>
+    <% include partials/header.ejs %>
+    <div id="allPage"> 
+        
+    <div id="wrapper">
+        
+
+        <main>
+          <div class="container1">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+              
+              <div class="column">
+                <form>
+                  <label for="fname">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 350px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;
+                  <label for="country">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="email" name="email" placeholder="Your email..">
+              <label for="country">Contact</label>&nbsp;
+                  <input type="text" id="mobile" name="mobile" placeholder="Your contact number.."> 
+                  <label for="subject">Message</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                  <textarea id="subject" name="subject" placeholder="Write your message.." style="height:50px"></textarea> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="submit" value="Contact Us">
+              <input type="reset" value="Reset">
+                </form>
+              </div>
+            </div>
+          </div>
+
+                       
+         </main>
+
+                    
+               <aside>
+                <figure>
+                <img src="/images/chitra_pic.jpg" width="300" height="400" alt="real image">
+                <br><i class="fas fa-phone-volume"></i> (416) 558-9479    
+                <br><i class="fas fa-paper-plane"></i> <a href="mailto:Cr_Creations@gmail.com"> Cr_Creations@gmail.com </a>
+                </figure>
+                
+                <br> Social</br>
+                <table id="customers" style="background-color: powderblue;">
+                    <tr>
+                      <th style="background-color: powderblue;"><a href = "https://www.facebook.com/chitra.roy.94">
+                        <img src="/images/Facebook-logo.png" alt=""  height=100 width=110></img></a>
+                      </th>
+                      <th style="background-color: powderblue;"><a href = "https://www.linkedin.com/in/chitra-roy-93290a193">
+                        <img src="/images/lk-logo.png" alt=""  height=100 width=110></img>
+                      </a></th>
+
+                    </tr></table>
+
+                <br>
+                <br>
+            
+              </aside>
+              <% include partials/footer.ejs %> 
+             </div>
+             </div>

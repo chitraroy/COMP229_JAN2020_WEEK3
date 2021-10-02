@@ -1,0 +1,238 @@
+﻿* { 
+	box-sizing: border-box;
+    	margin: 0;
+}
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size:small;
+	background-color: #627CBB;
+	width: 1305px;
+}
+#wrapper {
+	background-color: #B0E4EC;
+}
+header {
+	color: white;
+	background-color: #43A1A2; 
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	padding: .5em 0 .5em 5.5em;
+}
+
+
+main {   
+	background-color: #FFFFFF;
+      color: #000000;
+	padding: 1em; 
+}
+aside { 
+	text-align: center; 
+}
+footer {
+	background-color: #010111;
+	font-size: 80%;
+	text-align: center;
+	padding: 0.5em 0;
+	color: rgb(255, 255, 255);
+}
+img { 
+	padding: 1em; 
+}
+h2 {
+	color: #3AD0D6;
+}
+.floatRight{
+	float:right;
+	margin-left:6px;
+	
+}
+
+#customers {
+  font-family: Verdana;
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 73%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#customers td, #customers th {
+  border: 1px solid #E8F5F4;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #E8F5F4;}
+
+#customers tr:hover {background-color: #A08ECA;}
+
+#customers th {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  background-color: #E8F5F4;
+  color: white;
+}
+
+.blink_me {
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* Styles to configure navigation links as horizontal areas */
+nav ul { 
+	list-style-type: none;
+      padding-left: 0; 
+	border-top: 1px solid #EEEEEE;
+}
+nav li { 
+	border-bottom: 1px solid #EEEEEE;  
+      text-align: center;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+nav a { 
+	text-decoration: none;
+		font-weight: bold;
+}
+nav a:link {
+	color: #DC260C;
+}
+nav a:hover {
+	color: #4345A2;
+	animation: blinker 1s linear infinite;
+}
+
+/* make the current page's link look different */
+nav #page { 
+	font-weight: bold;
+	font-size: xx-large;
+      color: #FEFEFE; 
+}
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+header, nav, main, footer, aside, figure { 
+	display: block; 
+}
+
+/* Medium Display */
+@media (min-width: 1024px) {
+#wrapper { 
+ 	display: grid; 
+	grid-template-columns: 55% auto;
+	grid-template-rows: auto auto auto auto;
+	 }
+header { 
+	grid-row: 1 / 2; grid-column: 1 / 3; }
+nav    { 
+	grid-row: 2 / 3; grid-column: 1 / 3; }
+main   { 
+	grid-row: 3 / 4; grid-column: 1 / 2; }
+aside  { 
+	grid-row: 3 / 4; grid-column: 2 / 3; }
+footer {
+ 	grid-row: 4 / 5; grid-column: 1 / 3; }
+nav ul { 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap; 
+	justify-content: space-around; }
+nav ul li { 
+	border-bottom: none; } 
+ 							 }
+/* Large Display */
+@media (min-width: 1024px) {
+body     { 
+	background-color: #cfcfcf; 
+}
+nav ul { 
+	display: flex; 
+	flex-direction: column; 
+	flex-wrap: nowrap; 
+}
+#wrapper { 
+	width: 100%; 
+      margin: auto; 
+      max-width: 1200px; 
+      display: grid; 
+	grid-template-columns: 150px auto auto;
+	grid-template-rows: auto auto auto ; 
+}
+header { 
+	grid-row: 1 / 2; 
+	grid-column: 1 / 4; 
+}
+nav    { 
+	grid-row: 2 / 3; 
+	grid-column: 1 / 2; 
+}
+main   { 
+	grid-row: 2 / 3; 
+	grid-column: 2 / 3; 
+}
+aside  { 
+grid-row: 2 / 3; 
+grid-column: 3 / 4; 
+}
+footer { 
+	grid-row: 3 / 4; 
+	grid-column: 1 / 4; 
+}
+
+					} 
+	 
+
+.floatRight {
+	float: right;
+}
+	 
+
+.clearBoth {
+	clear: both;
+}
+	 
+#gallery {position: relative; }
+#gallery ul {list-style-type: none;
+    width: 500px; }
+#gallery li { display: inline; 
+     float: left;
+	 padding: 10px; }
+	 
+#gallery img {border-style: none; }
+#gallery a { text-decoration: none;
+             font-style: italic;  
+             color: #333; }
+#gallery span {display: none; }
+#gallery a:hover span {display: block;     
+position: absolute;
+top: 10px;
+left: 300px; 
+text-align: center; } 
+
+#listing {
+	color: #000000;
+	font-family: Verdana;
+	background-color: #FFFFFF;
+	text-align: start;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: auto;
+}
+
+.btnx {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	cursor: pointer;
+	font-size: 8px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btnx:hover {
+	background-color: RoyalBlue;
+  }
