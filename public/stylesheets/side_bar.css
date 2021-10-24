@@ -139,4 +139,29 @@ input[type=reset]:hover {
   display: table;
   clear: both;
 }
+
+/* Button for edit and delete */
+
+.buttonedit {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+}
+
+.buttondlt {
+  background-color: #f10c0c; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+}
+
       

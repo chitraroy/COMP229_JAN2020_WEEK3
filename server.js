@@ -4,9 +4,10 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./config/app');
 var debug = require('debug')('week2-009:server');
 var http = require('http');
+const configurePassport = require('./config/passport');
 
 /**
  * Get port from environment and store in Express.
@@ -24,7 +25,7 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+const passport = configurePassport();
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -87,4 +88,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`Example app listening at http://localhost:${port}`)
 }

@@ -1,0 +1,83 @@
+<!-- CSS Stylesheets invoke section -->
+<link href="/stylesheets/projectStyles.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/side_bar.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+
+
+<!-- Contact  Page Design section-->
+<body>
+   <!-- Invoking/calling Common Header/navigation bar from Partials -->
+    <% include partials/header.ejs %>
+  
+    <!-- Services Page  -->
+    <div id="allPage"> 
+    <div id="wrapper">
+        
+
+        <main>
+          <div class="container1">
+            <div style="text-align:center">
+              <!-- Header Message -->
+              <h2>Log In Page</h2>
+            </div>
+            <!-- Contact Form -->
+            <div class="row">
+              
+              <div class="column">
+                <form id="contact_form" >
+                  <!-- Name -->
+                  <label for="name">User Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="name" name="name"  style="width: 250px;background-color: rgb(213, 206, 236);"
+                  oninput="this.setCustomValidity('')" required="required"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <!-- pwd -->
+                  <label for="pwd">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="pwd" name="pwd" style="width: 250px;background-color: rgb(213, 206, 236);"
+                  oninput="this.setCustomValidity('')" required="required"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <input type="submit" value="Log In">
+                  <input type="reset" value="Reset">
+              
+                </form>
+              </div>
+            </div>
+          </div>                       
+         </main>
+    <!-- JS invoke section -->
+<!-- <script type = "text/javascript" src="/javascripts/form_validity.js"></script> -->
+
+             <!-- Side Banner Bar to include pic,contact and social media links  -->       
+               <aside>
+                <figure>
+                  <!-- Image -->
+                <img src="/images/chitra_pic.jpg" width="300" height="400" alt="real image">
+                <!-- Contact and Email -->
+                <br><i class="fas fa-phone-volume"></i> (416) 558-9479    
+                <br><i class="fas fa-paper-plane"></i> <a href="mailto:Cr_Creations@gmail.com"> Cr_Creations@gmail.com </a>
+                </figure>
+                <!-- Social Media Information link -->
+                <br> Social</br>
+                <table id="customers" style="background-color: powderblue;">
+                    <tr>
+                      <th style="background-color: powderblue;"><a href = "https://www.facebook.com/chitra.roy.94">
+                        <img src="/images/Facebook-logo.png" alt=""  height=100 width=110></img></a>
+                      </th>
+                      <th style="background-color: powderblue;"><a href = "https://www.linkedin.com/in/chitra-roy-93290a193">
+                        <img src="/images/lk-logo.png" alt=""  height=100 width=110></img>
+                      </a></th>
+
+                    </tr></table>
+
+                <br>
+                <br>
+            
+              </aside>
+             <!-- Invoking/calling Commonfooter bar from Partials -->
+              <% include partials/footer.ejs %> 
+             </div>
+             </div>
